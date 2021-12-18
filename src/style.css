@@ -1,0 +1,136 @@
+body, html {
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+}
+
+body, main {
+    display: flex;
+    flex-direction: column;
+}
+
+a:link {
+    text-decoration: none;
+    color: #9CACCC;
+    transition: color 0.4s ease-out;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #9CACCC;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #C3D7FF;
+}
+
+a:active {
+    text-decoration: none;
+    color: #9CACCC;
+}
+
+#navbar {
+    background-color: #282C34;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+#navbar > p {
+    padding: 10px 30px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+#welcome-section {
+    background-color: #9CACCC;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 0;
+}
+
+#fixed-welcome {
+    position: fixed;
+    border: 10px outset #616B7F;
+    border-radius: 7px;
+    padding: 25px;
+}
+
+#contact {
+    background-color: #454C5A;
+    z-index: 1;
+}
+
+#contact > div {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
+footer {
+    height: 10vh;
+    background-color: #282C34;
+}
+
+
+.tiny {
+    font-size: 0.8rem;
+}
+
+#projects {
+    position: relative;
+    background-color: #7F8CA6;
+}
+
+#project-items {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.project-tile {
+    background-color: #1D2025;
+    padding: 10px;
+    border-radius: 20px 5px;
+    margin: 1em;
+}
+
+.project-tile p {
+    text-align: center;
+}
+.project-image {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+
+#profile-link {
+    content: "\f09b";
+}
+
+@media screen and (max-width: 900px) {
+    #project-items {
+        flex-flow: column wrap;
+    }
+    #navbar {
+        font-size: 1rem;
+    }
+    #fixed-welcome {
+        border: initial;
+    }
+}
